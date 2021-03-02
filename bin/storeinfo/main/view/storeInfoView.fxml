@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1187.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storeinfo.main.view.StoreInfoViewController">
+	<children>
+		<Label fx:id="storeName" layoutX="56.0" layoutY="85.0" text="업체명">
+			<font>
+				<Font name="Malgun Gothic Bold" size="30.0" />
+			</font>
+		</Label>
+		<Label fx:id="storeAddr" layoutX="56.0" layoutY="131.0" prefHeight="36.0" prefWidth="903.0" text="업체주소">
+			<font>
+				<Font name="Malgun Gothic" size="22.0" />
+			</font>
+		</Label>
+		<JFXButton fx:id="shareBtn" layoutX="843.0" layoutY="53.0" onAction="#OnShare" styleClass="roundBtn" stylesheets="@../../../common/css/style.css" text="공유하기">
+			<graphic>
+				<FontAwesomeIconView glyphName="SHARE_ALT" size="3em" />
+			</graphic>
+			<font>
+				<Font name="Malgun Gothic" size="15.0" />
+			</font>
+		</JFXButton>
+		<Label fx:id="storeTel" layoutX="56.0" layoutY="180.0" prefHeight="37.0" prefWidth="218.0" text="업체 전화번호">
+			<font>
+				<Font name="Malgun Gothic" size="22.0" />
+			</font>
+			<graphic>
+				<FontAwesomeIconView glyphName="PHONE" size="3em" />
+			</graphic>
+		</Label>
+		<Label layoutX="783.0" layoutY="185.0" text="회원평점">
+			<font>
+				<Font name="Malgun Gothic" size="22.0" />
+			</font>
+		</Label>
+		<Label layoutX="880.0" layoutY="179.0" text="0.0">
+			<font>
+				<Font name="Malgun Gothic" size="30.0" />
+			</font>
+		</Label>
+		<Label layoutX="928.0" layoutY="179.0" text="/5">
+			<font>
+				<Font name="Malgun Gothic" size="30.0" />
+			</font>
+		</Label>
+		<JFXButton fx:id="ratingBtn" layoutX="999.0" layoutY="183.0" onAction="#OnWriteRating" prefHeight="63.0" prefWidth="157.0" styleClass="roundBtn" stylesheets="@../../../common/css/style.css" text="평점 남기기">
+			<font>
+				<Font name="Malgun Gothic" size="20.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="favoriteBtn" layoutX="999.0" layoutY="262.0" onAction="#OnSetFavorite" prefHeight="63.0" prefWidth="157.0" styleClass="roundBtn" stylesheets="@../../../common/css/style.css" text="관심매장 등록">
+			<font>
+				<Font name="Malgun Gothic" size="20.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="visitedBtn" layoutX="999.0" layoutY="335.0" onAction="#OnSetVisited" prefHeight="63.0" prefWidth="157.0" styleClass="roundBtn" stylesheets="@../../../common/css/style.css" text="방문매장 등록">
+			<font>
+				<Font name="Malgun Gothic" size="20.0" />
+			</font>
+		</JFXButton>
+		<ScrollPane layoutX="56.0" layoutY="235.0" prefHeight="429.0" prefWidth="903.0" />
+		<Label fx:id="grade" layoutX="58.0" layoutY="53.0" prefHeight="36.0" prefWidth="177.0" textFill="#f39c12">
+			<font>
+				<Font name="Malgun Gothic Bold" size="18.0" />
+			</font>
+		</Label>
+      <JFXButton fx:id="closeBtn" layoutX="1123.0" layoutY="14.0" styleClass="roundBtn" stylesheets="@../../../common/css/style.css" text="닫기" onAction="#OnClose">
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+      </JFXButton>
+	</children>
+</AnchorPane>

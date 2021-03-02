@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="580.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="searchstore.view.StoreCellController">
+	<children>
+      <AnchorPane fx:id="pane" prefHeight="110.0" prefWidth="580.0" styleClass="cellPane" stylesheets="@../../common/css/style.css">
+         <children>
+            <HBox layoutX="14.0" layoutY="23.0" prefHeight="25.0" prefWidth="297.0">
+               <children>
+            		<Label fx:id="name" prefHeight="25.0" prefWidth="306.0" text="업체명">
+            			<font>
+            				<Font name="Malgun Gothic Bold" size="20.0" />
+            			</font>
+            		</Label>
+               </children>
+            </HBox>
+      		<Label fx:id="tel" layoutX="378.0" layoutY="23.0" prefHeight="25.0" prefWidth="189.0" text="010-000-0000" textAlignment="RIGHT">
+      			<font>
+      				<Font name="Malgun Gothic" size="20.0" />
+      			</font>
+      			<graphic>
+      				<FontAwesomeIconView glyphName="PHONE" size="2EM" />
+      			</graphic>
+      		</Label>
+            <Label layoutX="478.0" layoutY="53.0" text="평점">
+               <font>
+                  <Font name="Malgun Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="518.0" layoutY="53.0" text="/5">
+               <font>
+                  <Font name="Malgun Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Pane layoutX="14.0" layoutY="53.0" prefHeight="25.0" prefWidth="444.0">
+               <children>
+            		<Label fx:id="location" prefHeight="25.0" prefWidth="433.0" text="업체 주소">
+            			<font>
+            				<Font name="Malgun Gothic" size="20.0" />
+            			</font>
+            		</Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+	</children>
+</AnchorPane>

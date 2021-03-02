@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="searchPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="1200.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="searchstore.view.SearchStoreViewController">
+	<children>
+		<Label layoutX="740.0" layoutY="359.0" text="왼쪽 목록에서 매장을 선택해 주세요">
+			<font>
+				<Font name="Malgun Gothic" size="18.0" />
+			</font>
+			<graphic>
+				<FontAwesomeIconView glyphName="HAND_ALT_LEFT" size="2em" />
+			</graphic>
+		</Label>
+      <JFXToggleButton fx:id="toggleAllBtn" layoutX="428.0" layoutY="131.0" prefHeight="60.0" prefWidth="194.0" text="인기순으로 보기" toggleColor="#f97f51" toggleLineColor="#f6e58d">
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+      </JFXToggleButton>
+		<ScrollPane fx:id="scrollPane" layoutX="26.0" layoutY="184.0" prefHeight="443.0" prefWidth="582.0">
+			<content>
+				<FlowPane fx:id="cellContainer" prefHeight="441.0" prefWidth="581.0" />
+			</content>
+		</ScrollPane>
+		<Label fx:id="word" layoutX="26.0" layoutY="51.0" text="검색어">
+			<font>
+				<Font name="Malgun Gothic Bold" size="18.0" />
+			</font>
+			<graphic>
+				<FontAwesomeIconView glyphName="SEARCH" size="2EM" />
+			</graphic>
+		</Label>
+		<Label fx:id="resultLbl" layoutX="26.0" layoutY="86.0" onMouseClicked="#OnAllResult" styleClass="hoverLbl" stylesheets="@../../common/css/style.css" text="전체 검색결과 : ">
+			<font>
+				<Font name="Malgun Gothic" size="17.0" />
+			</font>
+		</Label>
+		<Label fx:id="resultNum" layoutX="149.0" layoutY="86.0" text="0000">
+			<font>
+				<Font name="Malgun Gothic Bold" size="17.0" />
+			</font>
+		</Label>
+		<Label layoutX="613.0" layoutY="86.0" prefHeight="23.0" prefWidth="553.0" text="지도의 라벨을 클릭하면 상세 페이지로 이동하며 회원 기능을 이용할 수 있습니다.">
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font></Label>
+		<FontAwesomeIconView glyphName="INFO" layoutX="1157.0" layoutY="72.0" size="2EM" />
+		<Label fx:id="hygieneLbl" layoutX="25.0" layoutY="149.0" onMouseClicked="#OnHygiene" styleClass="hoverLbl" stylesheets="@../../common/css/style.css" text="위생등급업소">
+			<graphic>
+				<FontAwesomeIconView fill="#fccd23" glyphName="STAR" size="2EM" />
+			</graphic>
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+		</Label>
+		<Label fx:id="safetyLbl" layoutX="147.0" layoutY="149.0" onMouseClicked="#OnSafety" styleClass="hoverLbl" stylesheets="@../../common/css/style.css" text="안심식당">
+			<graphic>
+				<FontAwesomeIconView fill="#14d059" glyphName="STAR" size="2EM" />
+			</graphic>
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+		</Label>
+		<AnchorPane layoutX="624.0" layoutY="152.0" prefHeight="200.0" prefWidth="200.0">
+			<children>
+				<WebView fx:id="webView" prefHeight="486.0" prefWidth="572.0" />
+			</children>
+		</AnchorPane>
+      <JFXToggleButton fx:id="toggleHygieneBtn" layoutX="428.0" layoutY="131.0" prefHeight="60.0" prefWidth="194.0" text="인기순으로 보기" toggleColor="#f97f51" toggleLineColor="#f6e58d">
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="toggleSafetyBtn" layoutX="428.0" layoutY="131.0" prefHeight="60.0" prefWidth="194.0" text="인기순으로 보기" toggleColor="#f97f51" toggleLineColor="#f6e58d">
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+      </JFXToggleButton>
+      <HBox fx:id="bothBox" layoutX="242.0" layoutY="150.0" prefHeight="24.0" prefWidth="108.0">
+         <children>
+            <FontAwesomeIconView fill="#fccd23" glyphName="STAR" size="2EM" />
+            <FontAwesomeIconView fill="#14d059" glyphName="STAR" size="2EM" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="1.0" layoutY="1.0" onMouseClicked="#OnBoth" styleClass="hoverLbl" stylesheets="@../../common/css/style.css" text="모아보기">
+                 		 <font>
+                  		<Font name="Malgun Gothic" size="15.0" />
+              		 </font>
+              	 </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <JFXToggleButton fx:id="toggleBothBtn" layoutX="428.0" layoutY="131.0" prefHeight="60.0" prefWidth="194.0" text="인기순으로 보기" toggleColor="#f97f51" toggleLineColor="#f6e58d">
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+      </JFXToggleButton>
+	</children>
+</AnchorPane>

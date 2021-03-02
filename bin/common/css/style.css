@@ -1,0 +1,44 @@
+
+
+#searchBtn {
+	-fx-padding: 0.5em 0.8em;
+    -jfx-button-type: RAISED;
+    -fx-background-color: #fff;
+    -fx-text-fill:#3c3c3c;
+    -fx-border-radius: 30pt;
+    -fx-background-radius: 30pt;
+    
+}
+
+#searchBtn:hover {
+	-fx-background-color : #ecf0f1;
+}
+
+
+JFXButton {
+	
+}
+
+.mainBtn:hover {
+	-fx-border-color:#3c3c3c;
+	-fx-border-width:0 0 3px 0;
+	-fx-background-radius: 30pt;
+}
+
+
+.cellPane {
+	-fx-background-color: #fff
+}
+
+.cellPane:hover {
+	-fx-background-color: #ecf0f1;
+}
+
+.roundBtn:hover {
+	-fx-background-color: #ecf0f1;
+	-fx-background-radius: 30pt;
+}
+
+.hoverLbl:hover {
+	-fx-font-weight: bold;
+}

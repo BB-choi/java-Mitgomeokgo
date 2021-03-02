@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0"
+	prefWidth="400.0" style="-fx-background-color: #fff;"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="member.mypage.view.MyPageViewController">
+	<children>
+		<JFXButton fx:id="memEditBtn" layoutX="25.0" layoutY="82.0"
+			onAction="#OnMemberEdit" prefHeight="60.0" prefWidth="350.0"
+			text="회원정보 관리">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</JFXButton>
+		<JFXButton layoutX="25.0" layoutY="155.0"
+			onAction="#OnFavoriteStore" prefHeight="60.0" prefWidth="350.0"
+			text="저장 매장 관리">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</JFXButton>
+		<JFXButton layoutX="25.0" layoutY="228.0"
+			onAction="#OnStoreRating" prefHeight="60.0" prefWidth="350.0"
+			text="평점 관리">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</JFXButton>
+	</children>
+</AnchorPane>

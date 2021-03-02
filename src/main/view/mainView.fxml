@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.MainViewController">
+	<children>
+      <AnchorPane layoutY="18.0" prefHeight="87.0" prefWidth="199.0">
+         <children>
+            <ImageView fitHeight="87.0" fitWidth="88.0" layoutX="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../res/img/title.png" />
+               </image>
+            </ImageView>
+      		<JFXButton fx:id="topBtn" layoutX="3.0" onAction="#OnTop" prefHeight="87.0" prefWidth="214.0" style="-fx-background-radius: 10px;" text="　">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../res/icon/icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+      		</JFXButton>
+         </children>
+      </AnchorPane>
+		<AnchorPane fx:id="anchorMain" layoutY="105.0" prefHeight="695.0" prefWidth="1200.0" />
+		<JFXButton fx:id="loginBtn" layoutX="918.0" layoutY="55.0" onAction="#OnLogin" prefHeight="28.0" prefWidth="78.0" styleClass="mainBtn" stylesheets="@../../common/css/style.css" text="로그인">
+			<font>
+				<Font name="Malgun Gothic" size="18.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="exitBtn" layoutX="1125.0" layoutY="55.0" onAction="#OnExit" prefHeight="39.0" prefWidth="61.0" styleClass="mainBtn" stylesheets="@../../common/css/style.css" text="종료">
+			<font>
+				<Font name="Malgun Gothic" size="18.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="memBtn" layoutX="996.0" layoutY="55.0" onAction="#OnMember" styleClass="mainBtn" stylesheets="@../../common/css/style.css" text="회원메뉴">
+			<font>
+				<Font name="Malgun Gothic" size="18.0" />
+			</font>
+		</JFXButton>
+		<JFXButton layoutX="1092.0" layoutY="14.0" onAction="#OnAdmin" text="관리자메뉴">
+         <font>
+            <Font name="Malgun Gothic" size="13.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="searchIpt" focusColor="#3c3c3c" layoutX="231.0" layoutY="54.0" prefHeight="43.0" prefWidth="225.0" promptText="지역명, 업체명으로 검색" style="-fx-background-color: #dcdde1; -fx-background-radius: 30pt;" unFocusColor="#dcdde1">
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></JFXTextField>
+      <JFXButton fx:id="searchBtn" layoutX="416.0" layoutY="50.0" onAction="#OnSearchBtn" prefHeight="29.0" prefWidth="131.0" stylesheets="@../../common/css/style.css" text="검색">
+         <graphic>
+            <FontAwesomeIconView glyphName="SEARCH" size="2em" />
+         </graphic>
+         <font>
+            <Font name="Malgun Gothic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="locationLbl" layoutX="562.0" layoutY="75.0" text="Location" textFill="#3c3c3c">
+         <font>
+            <Font name="Malgun Gothic Bold" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#e67e22" glyphName="MAP_MARKER" size="1.5EM" />
+         </graphic>
+      </Label>
+	</children>
+</AnchorPane>

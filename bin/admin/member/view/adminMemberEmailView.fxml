@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="620.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="32.0" layoutY="43.0" text="회원 아이디">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="43.0" text="아이디 표시 영역">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="91.0" text="변경할 이메일">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="166.0" layoutY="84.0" prefHeight="39.0" prefWidth="316.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="501.0" layoutY="30.0" prefHeight="105.0" prefWidth="98.0" text="확인">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

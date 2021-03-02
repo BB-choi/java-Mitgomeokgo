@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0"
+	prefWidth="712.0" style="-fx-background-color: #fff;"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="member.edit.view.MailEditController">
+	<children>
+		<Label layoutX="47.0" layoutY="46.0" text="이메일">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="14.0" layoutY="125.0" text="인증번호 입력">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<JFXTextField layoutX="153.0" layoutY="33.0"
+			prefHeight="50.0" prefWidth="353.0">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</JFXTextField>
+		<JFXTextField disable="true" layoutX="153.0"
+			layoutY="112.0" prefHeight="50.0" prefWidth="353.0" fx:id="iptAuth">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</JFXTextField>
+		<JFXButton fx:id="getAuthBtn" layoutX="531.0" layoutY="33.0"
+			prefHeight="50.0" prefWidth="167.0" text="인증번호 받기" onAction="#OnGetAuth">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="submitAuthBtn" disable="true"
+			layoutX="531.0" layoutY="112.0" prefHeight="50.0" prefWidth="167.0"
+			text="인증번호 입력" onAction="#OnSubmitAuth">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</JFXButton>
+	</children>
+</AnchorPane>
